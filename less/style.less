@@ -16,7 +16,6 @@ button{
 .header{
     font-size: 40px;
     text-align: center;
-    padding: 50px 0px;
 }
 /*global style - finish*/
 
@@ -79,7 +78,7 @@ button{
         position: relative;
         border-radius: 5px;
         margin: 0px auto;
-        padding: 25px;
+        padding: 50px;
         &__gradient{
             position: absolute;
             z-index: 1;
@@ -138,7 +137,7 @@ button{
             font-size: 20px;
             background: black;
             color: white;
-            border: 1px black solid;
+            border: 1px white solid;
             border-radius: 5px;
             padding: 15px 50px;
             margin: 20px 0px;
@@ -158,14 +157,13 @@ button{
     &__category-name{
         font-size: 35px;
         text-align: center;
-        grid-row-start: 1;
         grid-column-start: 3;
         grid-column-end: 1;
     }
     &-box{
         position: relative;
-        width: 100%;
-        height: 100%;
+        width: 170px;
+        height: 355px;
         cursor: pointer;
         &__img{
             width: 100%;
@@ -208,6 +206,11 @@ button{
 /*about-us - start*/
 .benefits{
     padding-bottom: 50px;
+    &__header{
+        padding-bottom: 50px;
+        grid-column-start: 5;
+        grid-column-end: 1;
+    }
     &__container{
         background: black;
         color: white;
@@ -217,10 +220,8 @@ button{
     &__content{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 50px;
-        padding-bottom: 80px;
-        padding-left: 50px;
-        padding-right: 50px;
+        column-gap: 50px;
+        padding: 70px 50px
     }
 }
 .benefits-box{
@@ -232,21 +233,88 @@ button{
 
 /*catalog - start*/
 .catalog{
+    margin-bottom: 50px;
+    &__container{
+        box-shadow: -1px 20px 45px -10px rgba(0,0,0,0.35);
+        border-radius: 5px;
+    }
     &__content{
         display: grid;
         grid-template-columns: 2fr 5fr;
+        column-gap: 50px;
+        padding: 70px 50px;
+    }
+    &__header{
+        padding-bottom: 50px;
+        grid-column-start: 3;
+        grid-column-end: 1;
+    }
+}
+.select-sex{
+    &__content{
+        padding-bottom: 50px;
+    }
+    &__button{
+        font-size: 20px;
+        background: none;
+        width: 100%;
+        height: 60px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        &_active{
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+        &_deactive{
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+    }
+}
+
+.category-filter{
+    position:relative;
+    &__item{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 25px;
+        height: 40px;
+    }
+    &__link{
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+    &__item:hover{
+        height: 50px;
+        margin-bottom: 30px;
+        background: black;
+        text-align: left;
+        line-height: 47px;
+        border-radius: 5px;
+        position: fixed;
+    }
+    &__link:hover{
+        display: block;
+        color: white;
+        padding: 0px 20px;
     }
 }
 .showcase{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 20px;
     position: relative;
     justify-items: end;
     &-product-box{
         position: relative;
         width: 250px;
         height: 350px;
+        cursor: pointer;
         &__img{
             position: relative;
             width: 100%;

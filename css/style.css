@@ -16,7 +16,6 @@ button {
 .header {
   font-size: 40px;
   text-align: center;
-  padding: 50px 0px;
 }
 /*global style - finish*/
 /*header menu - start*/
@@ -73,7 +72,7 @@ button {
   position: relative;
   border-radius: 5px;
   margin: 0px auto;
-  padding: 25px;
+  padding: 50px;
 }
 .promo-slide-box__gradient {
   position: absolute;
@@ -136,7 +135,7 @@ button {
   font-size: 20px;
   background: black;
   color: white;
-  border: 1px black solid;
+  border: 1px white solid;
   border-radius: 5px;
   padding: 15px 50px;
   margin: 20px 0px;
@@ -157,14 +156,13 @@ button {
 .daily-product__category-name {
   font-size: 35px;
   text-align: center;
-  grid-row-start: 1;
   grid-column-start: 3;
   grid-column-end: 1;
 }
 .daily-product-box {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 355px;
   cursor: pointer;
 }
 .daily-product-box__img {
@@ -205,6 +203,11 @@ button {
 .benefits {
   padding-bottom: 50px;
 }
+.benefits__header {
+  padding-bottom: 50px;
+  grid-column-start: 5;
+  grid-column-end: 1;
+}
 .benefits__container {
   background: black;
   color: white;
@@ -214,24 +217,90 @@ button {
 .benefits__content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
-  padding-bottom: 80px;
-  padding-left: 50px;
-  padding-right: 50px;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  padding: 70px 50px;
 }
 .benefits-box__header {
   padding: 15px 0px;
 }
 /*about-us - finish*/
 /*catalog - start*/
+.catalog {
+  margin-bottom: 50px;
+}
+.catalog__container {
+  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+}
 .catalog__content {
   display: grid;
   grid-template-columns: 2fr 5fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  padding: 70px 50px;
+}
+.catalog__header {
+  padding-bottom: 50px;
+  grid-column-start: 3;
+  grid-column-end: 1;
+}
+.select-sex__content {
+  padding-bottom: 50px;
+}
+.select-sex__button {
+  font-size: 20px;
+  background: none;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.select-sex__button_active {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+.select-sex__button_deactive {
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+.category-filter {
+  position: relative;
+}
+.category-filter__item {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 25px;
+  height: 40px;
+}
+.category-filter__link {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.category-filter__item:hover {
+  height: 50px;
+  margin-bottom: 30px;
+  background: black;
+  text-align: left;
+  line-height: 47px;
+  border-radius: 5px;
+  position: fixed;
+}
+.category-filter__link:hover {
+  display: block;
+  color: white;
+  padding: 0px 20px;
 }
 .showcase {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 20px;
   position: relative;
   justify-items: end;
 }
@@ -239,6 +308,7 @@ button {
   position: relative;
   width: 250px;
   height: 350px;
+  cursor: pointer;
 }
 .showcase-product-box__img {
   position: relative;
