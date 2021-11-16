@@ -17,6 +17,33 @@ button{
     font-size: 40px;
     text-align: center;
 }
+.price{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    bottom: 45px;
+    left: 15px;
+    &_old{
+        position: absolute;
+        text-decoration: line-through;
+        font-size: 20px;
+        font-weight: 700;
+        -webkit-text-stroke: 0.5px white;
+        bottom: 15px;
+        left: 15px;
+    }
+}
+.rub{
+    font-size: 25px;
+    -webkit-text-stroke: 2px black;
+    &_old{
+        font-size: 16px;
+        -webkit-text-stroke: 0.5px white;
+    }
+}
+
 /*global style - finish*/
 
 
@@ -37,7 +64,7 @@ button{
     &__logo{
         width: 70px;
         height: 70px;
-        background: url(../img/logo.png) no-repeat center center;
+        background: url(../img/logo/logo.png) no-repeat center center;
         background-size: 100%;
     }
 }
@@ -191,14 +218,7 @@ button{
         }
     }
 }
-.rub-new{
-    font-size: 25px;
-    -webkit-text-stroke: 2px black;
-}
-.rub-old{
-    font-size: 16px;
-    -webkit-text-stroke: 0.5px white;
-}
+
 /*promo - finish*/
 
 
@@ -261,13 +281,13 @@ button{
         height: 60px;
         border-radius: 5px;
         margin-bottom: 20px;
-        &_active{
+        &_deactive{
             border: 2px solid black;
             background-color: white;
             color: black;
             font-size: 25px;
         }
-        &_deactive{
+        &_active{
             border: 2px solid black;
             background-color: black;
             color: white;
@@ -277,31 +297,27 @@ button{
 }
 
 .category-filter{
-    position:relative;
     &__item{
         display: block;
         margin-bottom: 20px;
         font-size: 25px;
-        height: 40px;
+        height: 50px;
     }
     &__link{
         display: block;
         text-decoration: none;
         color: black;
+        height: 40px;
+        padding: 5px 0px;
     }
     &__item:hover{
-        height: 50px;
-        margin-bottom: 30px;
         background: black;
-        text-align: left;
-        line-height: 47px;
         border-radius: 5px;
-        position: fixed;
     }
     &__link:hover{
         display: block;
         color: white;
-        padding: 0px 20px;
+        padding: 10px 20px;
     }
 }
 .showcase{
@@ -310,11 +326,28 @@ button{
     gap: 20px;
     position: relative;
     justify-items: end;
+    min-width: 790px;
+    min-height: 1090px;
+    &__product-group{
+        display: contents;
+    }
+    &__sex-women_active{
+        
+    }
+    &__sex-women_deactive{
+
+    }
     &-product-box{
         position: relative;
         width: 250px;
         height: 350px;
         cursor: pointer;
+        &_active{
+            display: block;
+        }
+        &_deactive{
+            display: none;
+        }
         &__img{
             position: relative;
             width: 100%;
@@ -322,24 +355,7 @@ button{
             object-fit: cover;
             border-radius: 5px;
         }
-        &__new-price{
-            position: absolute;
-            font-size: 35px;
-            font-weight: 700;
-            color: white;
-            -webkit-text-stroke: 2px black;
-            bottom: 45px;
-            left: 15px;
-        }
-        &__old-price{
-            position: absolute;
-            text-decoration: line-through;
-            font-size: 20px;
-            font-weight: 700;
-            -webkit-text-stroke: 0.5px white;
-            bottom: 15px;
-            left: 15px;
-        }
+
     }
 }
 /*catalog - finish*/
