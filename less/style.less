@@ -120,18 +120,15 @@ button{
 
 
 /*promo - start*/
-.slick{
-    &-list{
-        width: 800px;
-        height: auto;
-    }
-}
 .promo{
     margin: 0px auto;
     &__container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
+    }
+    &-slider{
+        width: 800px;
     }
     &-slide-box{
         position: relative;
@@ -373,33 +370,46 @@ button{
         }
     }
 }
+/*catalog - finish*/
 
 .about-us {
-
     &__container {
-
+        background: @black;
+        border-radius: 5px;
     }
-
     &__content {
-
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
     }
-
     &__header {
-
+        color: @white;
+        grid-column-end: 3;
+        grid-column-start: 1;
+        padding-bottom: 50px;
     }
-
     &__title {
-
+        grid-column-start: 1;
+        color: @white;
     }
-
     &__slider {
-
-    }
-
-    &__img {
-        
+        width: 525px;
     }
 }
-
-
-/*catalog - finish*/
+.abou-us-slider-box {
+    &__photo {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    &__name {
+        text-align: center;
+        color: @white;
+    }
+    &__title {
+        text-align: center;
+        color: @white;
+    }
+}

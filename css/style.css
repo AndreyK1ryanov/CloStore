@@ -108,10 +108,6 @@ button {
 }
 /*header menu - finish*/
 /*promo - start*/
-.slick-list {
-  width: 800px;
-  height: auto;
-}
 .promo {
   margin: 0px auto;
 }
@@ -119,6 +115,9 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+}
+.promo-slider {
+  width: 800px;
 }
 .promo-slide-box {
   position: relative;
@@ -361,3 +360,42 @@ button {
   height: 60px;
 }
 /*catalog - finish*/
+.about-us__container {
+  background: #000000;
+  border-radius: 5px;
+}
+.about-us__content {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+.about-us__header {
+  color: #ffffff;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  padding-bottom: 50px;
+}
+.about-us__title {
+  grid-column-start: 1;
+  color: #ffffff;
+}
+.about-us__slider {
+  width: 525px;
+}
+.abou-us-slider-box__photo {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.abou-us-slider-box__name {
+  text-align: center;
+  color: #ffffff;
+}
+.abou-us-slider-box__title {
+  text-align: center;
+  color: #ffffff;
+}

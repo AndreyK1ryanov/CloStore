@@ -9,4 +9,15 @@ $(document).ready(function () {
         arrows: false,
     });
 
+    $('.about-us__slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 700,
+        autoplay: false,
+        fade: true,
+        autoplaySpeed: 1700,
+        arrows: false,
+    });
+
 });
+
