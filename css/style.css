@@ -18,6 +18,19 @@
 }
 button {
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+::-webkit-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+:-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+::-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+::placeholder {
+  font-family: 'Raleway', sans-serif;
 }
 .button-black {
   position: relative;
@@ -28,6 +41,14 @@ button {
   border-radius: 5px;
   padding: 15px 50px;
   font-size: 20px;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.button-black:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .button-white {
   position: relative;
@@ -38,10 +59,26 @@ button {
   border-radius: 5px;
   padding: 15px 50px;
   font-size: 20px;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
-.header {
+.button-white:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.header-text-style {
   font-size: 40px;
   text-align: center;
+}
+.title-text-style {
+  font-size: 20px;
+  font-weight: 600;
+}
+.subtitle-text-style {
+  font-size: 20px;
+  font-weight: 400;
 }
 .price {
   position: absolute;
@@ -182,22 +219,9 @@ button {
 }
 .promo-slide-box__button {
   position: relative;
+  z-index: 5;
   margin: 20px 0px;
   border: 1px #ffffff solid;
-  -webkit-transition: -webkit-box-shadow;
-  transition: -webkit-box-shadow;
-  transition: box-shadow;
-  transition: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-.promo-slide-box__button:hover {
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(255, 255, 255, 0.35);
-          box-shadow: 0px 5px 5px 0px rgba(255, 255, 255, 0.35);
-}
-.promo-slide-box__button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 .daily-product {
   display: grid;
@@ -224,7 +248,7 @@ button {
   border-radius: 5px;
 }
 /*promo - finish*/
-/*about-us - start*/
+/*benefits - start*/
 .benefits__header {
   padding-bottom: 50px;
   grid-column-start: 5;
@@ -237,16 +261,18 @@ button {
   border-radius: 5px;
 }
 .benefits__content {
+  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -webkit-column-gap: 50px;
           column-gap: 50px;
   padding: 70px 50px;
 }
-.benefits-box__header {
+.benefits-box__title {
   padding: 15px 0px;
 }
-/*about-us - finish*/
+/*benefits - finish*/
 /*catalog - start*/
 .catalog__container {
   -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
@@ -271,19 +297,9 @@ button {
 .select-sex__button {
   font-size: 25px;
   width: 100%;
-  height: 60px;
+  padding: 15px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
-}
-.select-sex__button_deactive {
-  border: 2px solid #000000;
-  background-color: #ffffff;
-  color: #000000;
-}
-.select-sex__button_active {
-  border: 2px solid #000000;
-  background-color: #000000;
-  color: #ffffff;
 }
 .category-filter__item {
   display: block;
@@ -349,6 +365,43 @@ button {
      object-fit: cover;
   border-radius: 5px;
 }
+.showcase-product-box__shadow {
+  opacity: 0;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.showcase-product-box__shadow:hover {
+  opacity: 1;
+}
+.showcase-product-box__product-name {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+.showcase-product-box__button-block {
+  padding: 20px;
+}
+.showcase-product-box__description-button {
+  width: 100%;
+}
+.showcase-product-box__buy-button {
+  width: 100%;
+  margin-top: 20px;
+}
 .showcase__more-block {
   text-align: center;
   grid-column-start: 1;
@@ -360,12 +413,15 @@ button {
   height: 60px;
 }
 /*catalog - finish*/
+/*about-us - start*/
 .about-us__container {
+  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
   background: #000000;
   border-radius: 5px;
 }
 .about-us__content {
-  padding: 50px;
+  padding: 70px 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 50px;
@@ -377,9 +433,13 @@ button {
   grid-column-start: 1;
   padding-bottom: 50px;
 }
-.about-us__title {
+.about-us__subtitle {
   grid-column-start: 1;
   color: #ffffff;
+}
+.about-us__text-spacer {
+  display: block;
+  padding-bottom: 15px;
 }
 .about-us__slider {
   width: 525px;
@@ -392,10 +452,54 @@ button {
   border-radius: 5px;
 }
 .abou-us-slider-box__name {
+  padding: 10px 0px;
   text-align: center;
   color: #ffffff;
+  font-size: 30px;
 }
 .abou-us-slider-box__title {
   text-align: center;
   color: #ffffff;
 }
+/*about-us - finish*/
+/*subscribe-form - start*/
+.subscribe-form {
+  text-align: center;
+}
+.subscribe-form__container {
+  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+}
+.subscribe-form__content {
+  padding: 70px 50px;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.subscribe-form__title {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.subscribe-form-body__input {
+  width: 350px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+}
+.subscribe-form-body__input:focus-visible {
+  border: 1px solid black !important;
+  outline: none;
+  border-radius: 5px;
+}
+.subscribe-form-body__button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+}
+/*subscribe-form - finsh*/
