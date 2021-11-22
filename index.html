@@ -17,17 +17,19 @@
 
     <div class="header-menu">
         <div class="header-menu__container container">
-            <a class="header-menu__logo" href="#"></a>
-            <p class="header-menu__stor-name">CloStore</p>
-            <nav class="navigation">
-                <ul class="navigation__list navigation__list-inline">
-                    <li class="navigation__item"><a class="navigation__link" href="">Главная</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="">Каталог</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="">Доставка</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="">О нас</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="header-menu__content">
+                <a class="header-menu__logo" href="#"></a>
+                <p class="header-menu__stor-name">CloStore</p>
+                <nav class="navigation">
+                    <ul class="navigation__list navigation__list-inline">
+                        <li class="navigation__item"><a class="navigation__link" href="">Главная</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="">Каталог</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="">Доставка</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="">О нас</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 
@@ -35,46 +37,70 @@
 
     <div class="promo">
         <div class="promo__container container">
-            <div class="promo-slider">
-                <div class="promo-slide-box">
-                    <span class="promo-slide-box__gradient">
-                        <img class="promo-slide-box__img" src="img/promo slider/sale_slide.jpg">
-                    </span>
-                    <h1 class="promo-slide-box__header">Зимняя распродажа</h1>
-                    <p class="promo-slide-box__title">Скидки до 90%</p>
-                    <p class="promo-slide-box__subtitle">На прошлогоднюю коллекцию 👨‍🦳</p>
-                    <button class="promo-slide-box__button button-black">Каталог</button>
+            <div class="promo__content">
+                <div class="promo-slider">
+                    <div class="promo-slide-box">
+                        <span class="promo-slide-box__gradient">
+                            <img class="promo-slide-box__img" src="img/promo slider/sale_slide.jpg">
+                        </span>
+                        <h1 class="promo-slide-box__header">Зимняя распродажа</h1>
+                        <p class="promo-slide-box__title">Скидки до 90%</p>
+                        <p class="promo-slide-box__subtitle">На прошлогоднюю коллекцию 👨‍🦳</p>
+                    </div>
+                    <div class="promo-slide-box">
+                        <span class="promo-slide-box__gradient">
+                            <img class="promo-slide-box__img" src="img/promo slider/arrival_slide.jpg" alt="">
+                        </span>
+                        <h1 class="promo-slide-box__header">Поступление новой коллекции</h1>
+                        <p class="promo-slide-box__title">Самые громкие бренды уже в нашем каталоге</p>
+                        <p class="promo-slide-box__subtitle">MaxStar и Каралева 🤩</p>
+                    </div>
+                    <div class="promo-slide-box">
+                        <span class="promo-slide-box__gradient">
+                            <img class="promo-slide-box__img" src="img/promo slider/birthday_slide.jpg" alt="">
+                        </span>
+                        <h1 class="promo-slide-box__header">Нам 10 лет!</h1>
+                        <p class="promo-slide-box__title">Ознакомьтесь с нашей историей и выйграйте призы</p>
+                        <p class="promo-slide-box__subtitle">Будет весело 😄</p>
+                    </div>
                 </div>
-                <div class="promo-slide-box">
-                    <span class="promo-slide-box__gradient">
-                        <img class="promo-slide-box__img" src="img/promo slider/arrival_slide.jpg" alt="">
-                    </span>
-                    <h1 class="promo-slide-box__header">Поступление новой коллекции</h1>
-                    <p class="promo-slide-box__title">Самые громкие бренды уже в нашем каталоге</p>
-                    <p class="promo-slide-box__subtitle">MaxStar и Каралева 🤩</p>
-                    <button class="promo-slide-box__button button-black">Каталог</button>
-                </div>
-                <div class="promo-slide-box">
-                    <span class="promo-slide-box__gradient">
-                        <img class="promo-slide-box__img" src="img/promo slider/birthday_slide.jpg" alt="">
-                    </span>
-                    <h1 class="promo-slide-box__header">Нам 10 лет!</h1>
-                    <p class="promo-slide-box__title">Ознакомьтесь с нашей историей и выйграйте призы</p>
-                    <p class="promo-slide-box__subtitle">Будет весело 😄</p>
-                    <button class="promo-slide-box__button button-black">О нас</button>
-                </div>
-            </div>
-            <div class="daily-product">
-                <h2 class="daily-product__category-name">Женские куртки</h2>
-                <div class="daily-product-box">
-                    <img class="daily-product-box__img" src="img/dily_product/daily1.png" alt="">
-                    <p class="daily-product-box__price price">3999<span class="rub-new">р.</span></p>
-                    <p class="daily-product-box__price price_old">8000<span class="rub-old">р.</span></p>
-                </div>
-                <div class="daily-product-box">
-                    <img class="daily-product-box__img" src="img/dily_product/daily2.jpeg" alt="">
-                    <p class="daily-product-box__price price">2999<span class="rub-new">р.</span></p>
-                    <p class="daily-product-box__price price_old">6000<span class="rub-old">р.</span></p>
+
+                <div class="daily-product">
+                    <h1 class="daily-product__category-name">Женские куртки</h1>
+                    <div class="product-box product-box_daily-product">
+                        <img class="product-box__img" src="img/wom_jackets/jackets1.png" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p
+                                class="product-box__product-name product-box__product-name_daily-product title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block product-box__button-block_daily-product">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box product-box_daily-product">
+                        <img class="product-box__img" src="img/wom_jackets/jackets2.jpeg" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p
+                                class="product-box__product-name product-box__product-name_daily-product title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block product-box__button-block_daily-product">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,8 +145,10 @@
                 <div class="filter">
                     <div class="select-sex">
                         <div class="select-sex__content">
-                            <button class="select-sex__button button-white">Женская одежда</button>
-                            <button class="select-sex__button button-white">Мужская одежда</button>
+                            <button class="select-sex__button button-white button-size-full-width button-size-m">Женская
+                                одежда</button>
+                            <button class="select-sex__button button-white button-size-full-width button-size-m">Мужская
+                                одежда</button>
                         </div>
                     </div>
                     <ul class="category-filter">
@@ -133,87 +161,153 @@
                     </ul>
                 </div>
                 <div class="showcase">
-
-                    <div class="showcase__product-group showcase__category-jackets showcase__sex-women">
-
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_jackets/jackets1.png" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
-                            <div class="showcase-product-box__shadow">
-                                <p class="showcase-product-box__product-name title-text-style">
-                                    Куртка утепленная: Супер СмартБланкет
-                                </p>
-                                <div class="showcase-product-box__button-block">
-                                    <button
-                                        class="showcase-product-box__description-button button-white">Подробнее</button>
-                                    <button class="showcase-product-box__buy-button button-white">Купить</button>
-                                </div>
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_jackets/jackets1.png" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
                             </div>
                         </div>
-
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_jackets/jackets2.jpeg" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                    </div>
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_jackets/jackets2.jpeg" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="showcase__product-group showcase__category-outerwear showcase__sex-women">
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_outerwear/wom_outerwear1.jpg" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
-                        </div>
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_outerwear/wom_outerwear2.jpg" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
-                        </div>
-                    </div>
-
-
-                    <div class="showcase__product-group showcase__category-shirts showcase__sex-women">
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_shirts/wom_shirts1.jfif" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
-                        </div>
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_shirts/wom_shirts2.jpg" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_outerwear/wom_outerwear1.jpg" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="showcase__product-group showcase__category-jeans showcase__sex-women">
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_jeans/wom_jeans1.jpeg" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
-                        </div>
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_jeans/wom_jeans2.jfif" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_outerwear/wom_outerwear2.jpg" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="showcase__product-group showcase__category-shoes showcase__sex-women">
-                        <div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_shoes/wom_shoes1.jpeg" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_shirts/wom_shirts1.jfif" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
                         </div>
-                        <!--<div class="showcase-product-box">
-                            <img class="showcase-product-box__img" src="img/wom_shoes/wom_shoes2.jpg" alt="">
-                            <p class="showcase-product-box__price price">2999<span class="rub">р.</span></p>
-                            <p class="showcase-product-box__price price_old">6000<span class="rub_old">р.</span></p>
-                        </div> -->
                     </div>
-
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_shirts/wom_shirts2.jpg" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_jeans/wom_jeans1.jpeg" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_jeans/wom_jeans2.jfif" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box product-box_showcase">
+                        <img class="product-box__img" src="img/wom_shoes/wom_shoes1.jpeg" alt="">
+                        <p class="product-box__price price">2999<span class="rub">р.</span></p>
+                        <p class="product-box__price price_old">6000<span class="rub_old">р.</span></p>
+                        <div class="product-box__shadow">
+                            <p class="product-box__product-name title-text-style">
+                                Куртка утепленная: Супер СмартБланкет
+                            </p>
+                            <div class="product-box__button-block">
+                                <button
+                                    class="product-box__description-button button-white button-size-m button-size-full-width">Подробнее</button>
+                                <button
+                                    class="product-box__buy-button button-white button-size-m button-size-full-width">Купить</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="showcase__more-block">
-                        <button class="showcase__more-button button-white">Еще</button>
+                        <button
+                            class="showcase__more-button button-white button-size-full-width button-size-l">Еще</button>
                     </div>
                 </div>
             </div>
@@ -290,7 +384,7 @@
                     и новинках</p>
                 <div class="subscribe-form-body">
                     <input class="subscribe-form-body__input" type="email" name="" id="" placeholder="mail@example.com">
-                    <button class="subscribe-form-body__button button-white">Отправить</button>
+                    <button class="subscribe-form-body__button button-white button-size-s">Отправить</button>
                 </div>
             </div>
         </div>

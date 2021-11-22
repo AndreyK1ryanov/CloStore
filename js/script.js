@@ -19,5 +19,11 @@ $(document).ready(function () {
         arrows: false,
     });
 
+    $('.product-box').hover(function () {
+        $('.product-box__price', this).hide();
+    }, function () {
+        $('.product-box__price', this).show();
+    });
+
 });
 
