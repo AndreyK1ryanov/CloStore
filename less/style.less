@@ -23,7 +23,14 @@
 ::placeholder {
     font-family: 'Raleway', sans-serif;
 }
-
+.slick{
+    &-list{
+        height: 100%;
+    }
+    &-track{
+        height: 100%;
+    }
+}
 button{
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
@@ -204,10 +211,13 @@ button{
         width: 800px;
     }
     &-slide-box{
-        position: relative;
-        border-radius: 5px;
-        margin: 0px auto;
-        padding: 50px;
+        display: grid !important;
+        align-items: center !important;
+        height: 100%;
+        cursor: pointer;
+        &__content{        
+            padding: 50px;
+        }
         &__gradient{
             position: absolute;
             z-index: 1;
@@ -489,3 +499,5 @@ button{
 }
 
 /*subscribe-form - finsh*/
+
+

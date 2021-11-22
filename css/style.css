@@ -28,6 +28,12 @@
 ::placeholder {
   font-family: 'Raleway', sans-serif;
 }
+.slick-list {
+  height: 100%;
+}
+.slick-track {
+  height: 100%;
+}
 button {
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
@@ -208,9 +214,14 @@ button {
   width: 800px;
 }
 .promo-slide-box {
-  position: relative;
-  border-radius: 5px;
-  margin: 0px auto;
+  display: grid !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  height: 100%;
+  cursor: pointer;
+}
+.promo-slide-box__content {
   padding: 50px;
 }
 .promo-slide-box__gradient {
