@@ -91,10 +91,12 @@ button {
 .title-text-style {
   font-size: 20px;
   font-weight: 600;
+  text-decoration: none;
 }
 .subtitle-text-style {
   font-size: 20px;
   font-weight: 400;
+  text-decoration: none;
 }
 .product-box__img {
   position: relative;
@@ -164,19 +166,34 @@ button {
   font-size: 16px;
   -webkit-text-stroke: 0.5px #ffffff;
 }
+.social-network-icon {
+  text-decoration: none;
+  font-size: 30px;
+}
+.social-network-icon_footer {
+  font-size: 30px;
+  margin: 0px 20px;
+  color: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.social-network-icon:hover {
+  border-bottom: 1px solid black;
+}
 /*global style - finish*/
 /*header menu - start*/
-.header-menu__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 12fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.header-menu__container {
   -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
           box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
+}
+.header-menu__content {
+  display: grid;
+  grid-template-columns: 0fr 0fr 10fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 90px;
-  padding: 0px 20px;
+  padding: 0px 50px;
 }
 .header-menu__logo {
   width: 70px;
@@ -187,6 +204,7 @@ button {
 .header-menu__stor-name {
   font-size: 30px;
   font-weight: 900;
+  padding: 0px 10px;
 }
 .navigation__list {
   text-align: right;
@@ -312,14 +330,14 @@ button {
   grid-column-end: 1;
 }
 .benefits__container {
+  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
   background: #000000;
   color: #ffffff;
   text-align: center;
   border-radius: 5px;
 }
 .benefits__content {
-  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
-          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -webkit-column-gap: 50px;
@@ -494,3 +512,55 @@ button {
           box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
 }
 /*subscribe-form - finsh*/
+/*footer - start*/
+.footer__container {
+  -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+}
+.footer__content {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-box {
+  display: grid;
+  padding: 50px;
+  gap: 50px;
+  border-bottom: 1px solid black;
+}
+.contact-box__header {
+  font-weight: 700;
+}
+.contact-box__adress-link {
+  color: #000000;
+}
+.contact-box__adress-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.contact-box__social-network-block {
+  text-align: center;
+}
+.copyright-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 50px;
+}
+.copyright-box__logo {
+  width: 60px;
+  height: 60px;
+}
+.copyright-box__company-name {
+  padding: 0px 5px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.copyright-box__copyright-info {
+  text-align: right;
+}
+/*footer - finish*/

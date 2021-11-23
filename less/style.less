@@ -85,10 +85,12 @@ button{
 .title-text-style{
     font-size: 20px;
     font-weight: 600;
+    text-decoration: none;
 }
 .subtitle-text-style{
     font-size: 20px;
     font-weight: 400;
+    text-decoration: none;
 }
 .product-box{
     &__img{
@@ -156,20 +158,35 @@ button{
         -webkit-text-stroke: 0.5px @white;
     }
 }
+.social-network-icon{
+    text-decoration: none;
+    font-size: 30px;
+    &_footer{
+        font-size: 30px;
+        margin: 0px 20px;
+        color: @black;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+    }
+}
+.social-network-icon:hover{
+    border-bottom: 1px solid black;
+}
 /*global style - finish*/
 
 
 
 /*header menu - start*/
 .header-menu{
-    &__content{
-        display: grid;
-        grid-template-columns: 1fr 1fr 12fr;
-        align-items: center;
+    &__container{
         box-shadow: -1px 20px 45px -10px rgba(0,0,0,0.35);
         border-radius: 5px;
+    }
+    &__content{
+        display: grid;
+        grid-template-columns: 0fr 0fr 10fr;
+        align-items: center;
         height: 90px;
-        padding: 0px 20px;
+        padding: 0px 50px;
     }
     &__logo{
         width: 70px;
@@ -180,6 +197,7 @@ button{
     &__stor-name{
         font-size: 30px;
         font-weight: 900;
+        padding: 0px 10px;
     }
 }
 .navigation{
@@ -309,13 +327,13 @@ button{
         grid-column-end: 1;
     }
     &__container{
+        box-shadow: -1px 20px 45px -10px rgba(0,0,0,0.35);
         background: @black;
         color: @white;
         text-align: center;
         border-radius: 5px;
     }
     &__content{
-        box-shadow: -1px 20px 45px -10px rgba(0,0,0,0.35);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 50px;
@@ -497,7 +515,70 @@ button{
         box-shadow: -1px 20px 45px -10px rgba(0,0,0,0.35);
     }
 }
-
 /*subscribe-form - finsh*/
+
+/*footer - start*/
+.footer {
+    &__container {
+        box-shadow: -1px 20px 45px -10px rgba(0,0,0,0.35);
+    }
+    &__content {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__contact-block {
+    }
+}
+.contact-box {
+    display: grid;
+    padding: 50px;
+    gap: 50px;
+    border-bottom: 1px solid black;
+    &__header {
+        font-weight: 700;
+    }
+    &__adress-link{
+        color: @black;
+    }
+    &__adress-link:hover{
+    }
+    &__adress-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    &__social-network-block{
+        text-align: center;
+    }
+}
+.copyright-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10fr;
+    align-items: center;
+    padding: 20px 50px;
+    &__brand-area {
+    }
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__company-name {
+        padding: 0px 5px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &__copyright-info {
+        text-align: right;
+    }
+}
+.title-text-style {
+}
+
+/*footer - finish*/
 
 

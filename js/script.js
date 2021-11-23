@@ -13,7 +13,7 @@ $(document).ready(function () {
         dots: false,
         infinite: true,
         speed: 700,
-        autoplay: false,
+        autoplay: true,
         fade: true,
         autoplaySpeed: 1700,
         arrows: false,
