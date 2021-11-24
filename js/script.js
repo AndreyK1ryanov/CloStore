@@ -5,7 +5,7 @@ $(document).ready(function () {
         speed: 700,
         autoplay: true,
         fade: true,
-        autoplaySpeed: 1700,
+        autoplaySpeed: 2000,
         arrows: false,
     });
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
         speed: 700,
         autoplay: true,
         fade: true,
-        autoplaySpeed: 1700,
+        autoplaySpeed: 2000,
         arrows: false,
     });
 
@@ -25,5 +25,8 @@ $(document).ready(function () {
         $('.product-box__price', this).show();
     });
 
+    $('.subscribe-form-body__button').on('click', function () {
+        alert('Благодарю за нажатие, но данная страница не подключена к CMS')
+    })
 });
 

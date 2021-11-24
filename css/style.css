@@ -4,6 +4,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 .main-body {
   font-family: 'Raleway', sans-serif;
@@ -45,15 +46,12 @@ button {
   color: #ffffff;
   border: none;
   border-radius: 5px;
+  border: 1px rgba(255, 255, 255, 0) solid;
   font-size: 20px;
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-}
-.button-black:hover {
-  background-color: #ffffff;
-  color: #000000;
 }
 .button-white {
   position: relative;
@@ -84,6 +82,21 @@ button {
 .button-size-s {
   padding: 10px 15px;
 }
+.black-link-style {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  padding: 15px;
+  -webkit-transition-property: border-radius, background, color;
+  transition-property: border-radius, background, color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.black-link-style:hover {
+  border-radius: 5px;
+  background: #000000;
+  color: #ffffff;
+}
 .header-text-style {
   font-size: 40px;
   text-align: center;
@@ -97,6 +110,22 @@ button {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
+}
+.stor-name {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0px 5px;
+}
+.stor-name:active {
+  color: #000000;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  background: url(../img/logo/logo.png) no-repeat center center;
+  background-size: 100%;
 }
 .product-box__img {
   position: relative;
@@ -167,24 +196,23 @@ button {
   -webkit-text-stroke: 0.5px #ffffff;
 }
 .social-network-icon {
-  text-decoration: none;
   font-size: 30px;
-}
-.social-network-icon_footer {
-  font-size: 30px;
-  margin: 0px 20px;
-  color: #000000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
-.social-network-icon:hover {
-  border-bottom: 1px solid black;
 }
 /*global style - finish*/
 /*header menu - start*/
+.header-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 .header-menu__container {
   -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
           box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #ffffff;
 }
 .header-menu__content {
   display: grid;
@@ -195,28 +223,12 @@ button {
   height: 90px;
   padding: 0px 50px;
 }
-.header-menu__logo {
-  width: 70px;
-  height: 70px;
-  background: url(../img/logo/logo.png) no-repeat center center;
-  background-size: 100%;
-}
-.header-menu__stor-name {
-  font-size: 30px;
-  font-weight: 900;
-  padding: 0px 10px;
-}
 .navigation__list {
   text-align: right;
 }
 .navigation__item {
   display: inline-block;
-  padding: 0px 20px;
-}
-.navigation__link {
-  text-decoration: none;
-  color: #000000;
-  font-size: 18px;
+  padding: 0px 10px;
 }
 /*header menu - finish*/
 /*promo - start*/
@@ -238,6 +250,7 @@ button {
           align-items: center !important;
   height: 100%;
   cursor: pointer;
+  text-decoration: none;
 }
 .promo-slide-box__content {
   padding: 50px;
@@ -550,15 +563,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 50px;
-}
-.copyright-box__logo {
-  width: 60px;
-  height: 60px;
-}
-.copyright-box__company-name {
-  padding: 0px 5px;
-  font-size: 30px;
-  font-weight: 700;
 }
 .copyright-box__copyright-info {
   text-align: right;
