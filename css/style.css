@@ -545,7 +545,7 @@ button {
 }
 .copyright-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 10fr;
+  grid-template-columns: 1fr 4fr 5fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
