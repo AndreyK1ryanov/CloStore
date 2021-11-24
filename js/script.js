@@ -28,5 +28,10 @@ $(document).ready(function () {
     $('.subscribe-form-body__button').on('click', function () {
         alert('Благодарю за нажатие, но данная страница не подключена к CMS')
     })
+
+    $('.select-sex__button').on('click', function () {
+        $('.select-sex__button').removeClass('select-sex__button_active').addClass('button-white').addClass('select-sex__button_deactive')
+        $(this).addClass('select-sex__button_active').removeClass('button-white').addClass('button-black').removeClass('select-sex__button_deactive')
+    })
 });
 
