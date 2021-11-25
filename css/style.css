@@ -587,6 +587,7 @@ button {
 .contact-box__adress-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  text-align: center;
   gap: 20px;
 }
 .contact-box__social-network-block {
@@ -602,5 +603,19 @@ button {
 }
 .copyright-box__copyright-info {
   text-align: right;
+}
+@media (max-width: 768px) {
+  .contact-box__adress-block {
+    grid-template-columns: 1fr;
+  }
+  .copyright-box {
+    grid-template-columns: 1fr;
+  }
+  .copyright-box__logo {
+    display: none;
+  }
+  .copyright-box__company-name {
+    display: none;
+  }
 }
 /*footer - finish*/
