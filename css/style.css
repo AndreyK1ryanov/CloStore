@@ -172,7 +172,7 @@ button {
   bottom: 45px;
   left: 15px;
 }
-.price_old {
+.price-old {
   position: absolute;
   text-decoration: line-through;
   font-size: 20px;
@@ -185,12 +185,18 @@ button {
   font-size: 25px;
   -webkit-text-stroke: 2px #000000;
 }
-.rub_old {
+.rub-old {
   font-size: 16px;
   -webkit-text-stroke: 0.5px #ffffff;
 }
 .social-network-icon {
   font-size: 30px;
+}
+.slick-track {
+  height: 100%;
+}
+.slick-list {
+  height: 100%;
 }
 /*global style - finish*/
 /*header menu - start*/
