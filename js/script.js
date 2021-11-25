@@ -3,7 +3,7 @@ $(document).ready(function () {
         dots: false,
         infinite: true,
         speed: 700,
-        autoplay: true,
+        autoplay: false,
         fade: true,
         autoplaySpeed: 2000,
         arrows: false,
@@ -13,10 +13,21 @@ $(document).ready(function () {
         dots: false,
         infinite: true,
         speed: 700,
-        autoplay: true,
+        autoplay: false,
         fade: true,
         autoplaySpeed: 2000,
         arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+        ]
     });
 
     $('.product-box').hover(function () {
