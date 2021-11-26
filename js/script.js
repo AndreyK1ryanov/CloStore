@@ -5,33 +5,13 @@ $(document).ready(function () {
         fade: true,
         arrows: false,
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1700,
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: true,
         adaptiveWidth: true
     });
-
-    $('.about-us__slider').slick({
-        dots: false,
-        infinite: false,
-        speed: 700,
-        autoplay: false,
-        fade: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                }
-            },
-        ]
-    });
-
 
     $('.product-box').hover(function () {
         $('.product-box__price', this).hide();
@@ -40,6 +20,9 @@ $(document).ready(function () {
     });
 
     $('.subscribe-form-body__button').on('click', function () {
+        alert('Благодарю за нажатие, но данная страница не подключена к CMS')
+    })
+    $('.load-more-product__button').on('click', function () {
         alert('Благодарю за нажатие, но данная страница не подключена к CMS')
     })
 
