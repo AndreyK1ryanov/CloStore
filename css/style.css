@@ -49,6 +49,7 @@ button {
 }
 .button-white {
   position: relative;
+  text-decoration: none;
   z-index: 100;
   background-color: #ffffff;
   color: #000000;
@@ -230,6 +231,11 @@ button {
   display: inline-block;
   padding: 0px 10px;
 }
+@media (max-width: 768px) {
+  .header-menu__content {
+    padding: 0px 20px;
+  }
+}
 /*header menu - finish*/
 /*promo - start*/
 .promo {
@@ -338,9 +344,11 @@ button {
 @media (max-width: 1199px) {
   .promo__content {
     padding: 0px 20px;
+    grid-template-columns: 6fr 4fr;
+    gap: 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .promo__content {
     grid-template-columns: 1fr;
   }
@@ -373,9 +381,14 @@ button {
 .benefits-box__title {
   padding: 15px 0px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .benefits__content {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .benefits__body {
+    padding: 50px 20px;
   }
 }
 /*benefits - finish*/
@@ -448,24 +461,39 @@ button {
   gap: 20px;
   position: relative;
 }
+.product-box_showcase {
+  position: relative;
+}
 .load-more-product {
   text-align: center;
   grid-column-start: 3;
   grid-column-end: 2;
-}
-.product-box_showcase {
-  position: relative;
-  width: 250px;
-  height: 350px;
 }
 @media (max-width: 1199px) {
   .product-box_showcase {
     width: 100%;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .showcase {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .catalog__content {
+    gap: 30px;
+    padding: 50px 20px;
+  }
+  .product-box__product-name {
+    padding: 5px;
+  }
+  .product-box__button-block {
+    padding: 5px;
+  }
+}
+@media (max-width: 570px) {
+  .showcase {
+    grid-template-columns: 1fr;
   }
 }
 /*catalog - finish*/
@@ -503,29 +531,73 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.abou-us-gallery-box {
+.gallery-box {
   height: 100%;
+  position: relative;
 }
-.abou-us-gallery-box__photo {
+.gallery-box__photo {
+  height: 100%;
   width: 100%;
-  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
 }
-.abou-us-gallery-box__name {
-  padding: 10px 0px;
+.gallery-box__name {
+  padding: 10px 20px;
   text-align: center;
   color: #ffffff;
   font-size: 30px;
 }
-.abou-us-gallery-box__title {
+.gallery-box__title {
   text-align: center;
   color: #ffffff;
+}
+.gallery-box__shadow {
+  opacity: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.gallery-box__shadow:hover {
+  opacity: 1;
+}
+.gallery-box__title-block {
+  padding: 20px;
+}
+.gallery-box__button-block {
+  padding: 20px;
 }
 @media (max-width: 991px) {
   .about-us__content {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .about-us__body {
+    padding: 50px 20px;
+  }
+  .gallery-box__title-block {
+    padding: 5px;
+  }
+  .gallery-box__button-block {
+    padding: 5px;
   }
 }
 /*about-us - finish*/
@@ -549,8 +621,15 @@ button {
   padding-top: 20px;
   padding-bottom: 50px;
 }
+.subscribe-form-body {
+  padding: 0px 60px;
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
+  grid-template-columns: 2fr 1fr;
+}
 .subscribe-form-body__input {
-  width: 350px;
+  width: 100%;
   padding: 10px 15px;
   font-size: 20px;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -567,6 +646,19 @@ button {
   margin-left: 10px;
   -webkit-box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
           box-shadow: -1px 20px 45px -10px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 768px) {
+  .subscribe-form__content {
+    padding: 50px 20px;
+  }
+  .subscribe-form-body {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .subscribe-form__content {
+    padding: 50px 20px;
+  }
 }
 /*subscribe-form - finsh*/
 /*footer - start*/
@@ -618,12 +710,18 @@ button {
   }
   .copyright-box {
     grid-template-columns: 1fr;
+    padding: 20px 20px;
   }
   .copyright-box__logo {
     display: none;
   }
   .copyright-box__company-name {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .footer__content {
+    grid-template-columns: 1fr;
   }
 }
 /*footer - finish*/
