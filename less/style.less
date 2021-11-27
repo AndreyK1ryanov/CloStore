@@ -212,6 +212,12 @@ button{
         height: 90px;
         padding: 0px 50px;
     }
+    &__open-button{
+        display: none;
+    }
+    &__close-button{
+        display: none;
+    }
 }
 .navigation{
     &__list{
@@ -221,14 +227,73 @@ button{
         display: inline-block;
         padding: 0px 10px;
     }
-}
-@media (max-width: 768px) {
-    .header-menu{
-        &__content{
-            padding: 0px 20px;
-        }
+    &__link{
+        font-size: 23px;
     }
 }
+@media (max-width: 991px) {
+    .header-menu{
+        &__container{
+            &_border-none{
+                border-radius: 0px;
+            }
+        }
+        &__content{
+            padding: 0px
+        }
+        &__logo{
+            margin-left: 20px;
+        }
+    }
+    .header-menu__open-button{
+        display: block;
+    }
+    .header-menu__content{
+        grid-template-columns: 0fr 1fr 60px;
+        grid-template-rows: 90px 0fr;
+    }
+    .header-menu__open-button{
+        font-size: 60px;
+        background: none;
+        border: none;
+        margin-right: 20px;
+    }
+    .header-menu__close-button{
+        font-size: 60px;
+        background: none;
+        border: none;
+        margin-right: 20px;
+    }
+    .header-menu__navigation{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        &_activate{
+            display: block;
+        }
+        &_deactivate{
+            display: none;
+        }
+    }
+    .navigation__list{
+        margin-top: -1px;
+        display: grid;
+        background-color: @white;
+        align-items: center;
+        text-align: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .navigation__item{
+        padding: 0px;
+        box-shadow: 0px 20px 50px -25px rgba(0,0,0,0.35);
+    }
+    .navigation__link{
+        display: block;
+        padding: 30px;
+    }
+}
+
 /*header menu - finish*/
 
 
