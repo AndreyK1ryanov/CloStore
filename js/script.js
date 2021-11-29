@@ -51,12 +51,23 @@ $(document).ready(function () {
     $('.load-more-product__button').on('click', function () {
         alert('Благодарю за нажатие, но данная страница не подключена к CMS')
     })
+    $('.category-filter__link').on('click', function () {
+        alert('Благодарю за нажатие, но данная страница не подключена к CMS')
+    })
+    $('.product-box__description-button').on('click', function () {
+        alert('Благодарю за нажатие, но данная страница не подключена к CMS')
+    })
+    $('.product-box__buy-button').on('click', function () {
+        alert('Благодарю за нажатие, но данная страница не подключена к CMS')
+    })
+    /********************************** button - gap - finish ***************************/
 
+    /**change class when click on select sex button in filter showcase - start function**/
     $('.select-sex__button').on('click', function () {
         $('.select-sex__button').removeClass('select-sex__button_active').addClass('button-white').addClass('select-sex__button_deactive')
         $(this).addClass('select-sex__button_active').removeClass('button-white').addClass('button-black').removeClass('select-sex__button_deactive')
     })
-    /********************************** button - gap - finish ***************************/
+    /**change class when click on select sex button in filter showcase - finish function*/
 
     /***** change button in about us block when window size >480px - start function *****/
     function myFunction() {
