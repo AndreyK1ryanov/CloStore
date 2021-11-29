@@ -160,8 +160,6 @@ button {
 /***************product item style - start****************/
 .product-box__img {
   position: relative;
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
@@ -215,6 +213,11 @@ button {
   -webkit-text-stroke: 2px #000000;
   bottom: 45px;
   left: 15px;
+}
+@media (max-width: 480px) {
+  .price {
+    font-size: 25px;
+  }
 }
 .price-old {
   position: absolute;
@@ -484,6 +487,10 @@ button {
 .product-box__button-block_daily-product {
   padding: 10px;
 }
+.product-box__img_daily-product {
+  width: 100%;
+  height: 355px;
+}
 /**************************adaptation - start***************************/
 @media (max-width: 1199px) {
   .promo__content {
@@ -636,6 +643,10 @@ button {
 .product-box_showcase {
   position: relative;
 }
+.product-box__img_showcase {
+  width: 100%;
+  height: 360px;
+}
 .load-more-product {
   text-align: center;
   grid-column-start: 3;
@@ -650,6 +661,10 @@ button {
 @media (max-width: 991px) {
   .showcase {
     grid-template-columns: 1fr 1fr;
+  }
+  .product-box__img_showcase {
+    width: 100%;
+    height: 395px;
   }
 }
 @media (max-width: 768px) {
@@ -669,6 +684,10 @@ button {
   .product-box__button-block_showcase {
     padding: 5px;
   }
+  .product-box__img_showcase {
+    width: 100%;
+    height: 360px;
+  }
   .load-more-product {
     grid-column-start: 1;
   }
@@ -683,13 +702,11 @@ button {
 }
 @media (max-width: 380px) {
   .showcase {
-    grid-template-columns: 1fr;
+    gap: 10px;
   }
-  .product-box__product-name_showcase {
-    padding: 30px;
-  }
-  .product-box__button-block_showcase {
-    padding: 30px;
+  .product-box__img_showcase {
+    width: 100%;
+    height: 300px;
   }
 }
 /*************************adaptation - finish**************************/
@@ -732,13 +749,14 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  max-height: 790px;
 }
 .gallery-box {
   height: 100%;
   position: relative;
 }
 .gallery-box__photo {
-  height: 100%;
+  height: 380px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -789,16 +807,32 @@ button {
   .about-us__content {
     grid-template-columns: 1fr;
   }
+  .about-us__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }
 @media (max-width: 768px) {
   .about-us__body {
     padding: 50px 20px;
+  }
+  .about-us__gallery {
+    grid-template-columns: 1fr 1fr;
   }
   .gallery-box__title-block {
     padding: 5px;
   }
   .gallery-box__button-block {
     padding: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .about-us__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-box__photo {
+    height: 250px;
   }
 }
 /*************************adaptation - finish**************************/
