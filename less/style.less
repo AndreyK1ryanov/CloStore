@@ -308,7 +308,7 @@ button{
         display: none;
     }
 }
-.navigation{
+.header-navigation{
     &__list{
         text-align: right;
     }
@@ -364,19 +364,11 @@ button{
                 display: none;
             }
         }
-        &__navigation{
-            grid-row-start: 2;
-            grid-column-start: 1;
-            grid-column-end: 4;
-            &_activate{
-                display: block;
-            }
-            &_deactivate{
-                display: none;
-            }
-        }
     }
-    .navigation{
+    .header-navigation{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
         &__list{
             margin-top: -1px;
             display: grid;
@@ -393,6 +385,12 @@ button{
         &__link{
             display: block;
             padding: 30px;
+        }
+        &_activate{
+            display: block;
+        }
+        &_deactivate{
+            display: none;
         }
     }
 }

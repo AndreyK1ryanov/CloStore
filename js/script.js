@@ -6,13 +6,13 @@ $(document).ready(function () {
     /*********************** Mobile menu header button's script - start ****************/
     $('.header-menu__open-button').on('click', function () {
         $('.header-menu__open-button').removeClass('header-menu__open-button_activate').addClass('header-menu__open-button_deactivate');
-        $('.header-menu__navigation').removeClass('header-menu__navigation_deactivate').addClass('header-menu__navigation_activate');
+        $('.header-navigation').removeClass('header-navigation_deactivate').addClass('header-navigation_activate');
         $('.header-menu__close-button').removeClass('header-menu__close-button_deactivate').addClass('header-menu__close-button_activate');
         $('.mobile-filter').removeClass('mobile-filter_activate').addClass('mobile-filter_deactivate')
     });
     $('.header-menu__close-button').on('click', function () {
         $('.header-menu__close-button').removeClass('header-menu__close-button_activate').addClass('header-menu__close-button_deactivate');
-        $('.header-menu__navigation').removeClass('header-menu__navigation_activate').addClass('header-menu__navigation_deactivate');
+        $('.header-navigation').removeClass('header-navigation_activate').addClass('header-navigation_deactivate');
         $('.header-menu__open-button').removeClass('header-menu__open-button_deactivate').addClass('header-menu__open-button_activate');
         $('.mobile-filter').removeClass('mobile-filter_deactivate').addClass('mobile-filter_activate')
     });
