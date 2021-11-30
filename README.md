@@ -12,7 +12,8 @@ BEM - методология
 
 Верстка полностью валидна, поддерживает все популярные браузеры и платформы. 
 
-
+#
+#
 
 ENG /
 This project is at the stage of development, but already now it can reflect my knowledge of layout.
