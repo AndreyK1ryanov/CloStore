@@ -12,6 +12,8 @@ BEM - методология
 
 Верстка полностью валидна, поддерживает все популярные браузеры и платформы. 
 
+
+
 ENG /
 This project is at the stage of development, but already now it can reflect my knowledge of layout.
 In the future, I plan to use this layout as a template for the CMS.
