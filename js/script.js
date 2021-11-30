@@ -84,9 +84,9 @@ $(document).ready(function () {
     });
     /*** change button in about us block when window size >480px - finish function *****/
 
+    /************************************map load - start ******************************/
+    $('.footer__map-block').append('<iframe src = "https://yandex.ru/map-widget/v1/?um=constructor%3Ae68c6fa35045fb879a840de9a5212a6785d1bcb92096510c84665c7b79876946&amp;source=constructor" width = "100%" height = "100%" frameborder = "0" ></iframe>')
+    /************************************map load - start ******************************/
 
-
-
-    $('footer__map-block').append('<iframe src = "https://yandex.ru/map-widget/v1/?um=constructor%3Ae68c6fa35045fb879a840de9a5212a6785d1bcb92096510c84665c7b79876946&amp;source=constructor" width = "100%" height = "100%" frameborder = "0" ></iframe>')
 });
 
